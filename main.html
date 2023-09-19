@@ -1,16 +1,137 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <style>
+    .center {
+      text-align: center;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .middle {
+      text-align: center;
+    }
+
+    #table-1,
+    #table-2,
+    #table-3 {
+      margin-bottom: 20px;
+    }
+
+    #table-3 tr:first-child {
+      background-color: green;
+    }
+
+    #table-3 tr:last-child {
+      background-color: blue;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>HTML Table Examples</h1>
 
+  <h2>Table 1 - Basic Table</h2>
+  <table id="table-1" class="middle" border="1px">
+    <tr>
+      <td id="t11">left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+    <tr>
+      <td id="t12" class="center">left</td>
+      <td class="center">centre</td>
+      <td class="right">right</td>
+    </tr>
+    <tr>
+      <td id="t13">left</td>
+      <td class="center">center</td>
+      <td class="right">right</td>
+    </tr>
+  </table>
+
+<!--   <h2>Table 2 - colspan and rowspan</h2> -->
+  <table id="table-2" class="middle" border="1px">
+    <tr>
+      <td id="t21" colspan="6">&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="2">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+
+<!--   <h2>Table 3 - Table with Image</h2> -->
+  <table id="table-3" class="middle" border="1px">
+    <tr>
+      <td colspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td id="t-image" colspan="3">
+        <img src="your-image-path.jpg" alt="Example Image">
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
 </body>
-
 </html>
