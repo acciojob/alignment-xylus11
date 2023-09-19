@@ -1,137 +1,108 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-  <style>
-    .center {
-      text-align: center;
-    }
-
-    .right {
-      text-align: right;
-    }
-
-    .middle {
-      text-align: center;
-    }
-
-    #table-1,
-    #table-2,
-    #table-3 {
-      margin-bottom: 20px;
-    }
-
-    #table-3 tr:first-child {
-      background-color: green;
-    }
-
-    #table-3 tr:last-child {
-      background-color: blue;
-    }
-  </style>
+	<link rel="stylesheet" href="styles.css">
+	<title>HTML Assignment 3</title>
+	<style>
+		.middle,tr,td{
+			border:1px solid black;
+			
+		}
+		.middle{
+			width:100%;
+			height:100%;
+			spacing:1px;
+			padding:1px;
+		}
+		.center{
+			text-align:center;
+		}
+		.right{
+			text-align:right;
+		}
+		td{
+			height:15px;
+		}
+		#t-image{
+			text-align:center;
+		}
+		
+	</style>
 </head>
+
 <body>
-  <h1>HTML Table Examples</h1>
+	<!-- the entire body must be written by student -->
+	<h1 style="text-align:center">HTML Assignment #3</h1>
 
-  <h2>Table 1 - Basic Table</h2>
-  <table id="table-1" class="middle" border="1px solid rgb(0, 0, 0)">
-    <tr>
-      <td id="t11" >left</td>
-      <td class="center">center</td>
-      <td class="right">right</td>
-    </tr>
-    <tr>
-      <td id="t12">left</td>
-      <td class="center">centre</td>
-      <td class="right">right</td>
-    </tr>
-    <tr>
-      <td id="t13" class="center" >left</td>
-      <td class="center">center</td>
-      <td class="right">right</td>
-    </tr>
-  </table>
+	<table class="middle" id="table-1">
+		<tr>
+			<td id="t11">left</td>
+			<td class="center" id="t12">center</td>
+			<td class="right" id="t13">right</td>
+		</tr>
+		<tr >
+			<td id="t11">left</td>
+			<td class="center" id="t12">center</td>
+			<td class="right" id="t13">right</td>
+		</tr>
+		<tr >
+			<td id="t11">left</td>
+			<td class="center" id="t12">center</td>
+			<td class="right" id="t13">right</td>
+		</tr>
+	</table>
+	<br><br>
+	<table class="middle" id="table-2">
+		<tr>
+			<td id="t21" colspan="6"></td>
+		</tr>
+		<tr>
+			<td rowspan="4"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			
+		</tr>
+		<tr>
+			<td></td>
+			<td colspan="3" rowspan="2"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="6"></td>
+		</tr>
+	</table>
+	<br>
+	<table id="table-3" class="middle">
+		<tr>
+			<td style="background-color:green"></td>
+		</tr>
+		<tr>
+			<td id="t-image"><img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg"></td>
+		</tr>
+		<tr>
+			<td style="background-color:blue"></td>
+		</tr>
+	</table>
+	
+    <script type="text/javascript" src="./script.js">
+</script>
 
-<!--   <h2>Table 2 - colspan and rowspan</h2> -->
-  <table id="table-2" class="middle" border="1px">
-    <tr>
-      <td id="t21" colspan="6">&nbsp;</td>
-    </tr>
-    <tr>
-      <td rowspan="2">&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-  </table>
-
-<!--   <h2>Table 3 - Table with Image</h2> -->
-  <table id="table-3" class="middle" border="1px">
-    <tr>
-      <td colspan="3">&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td id="t-image" colspan="3">
-        <img src="your-image-path.jpg" alt="Example Image">
-      </td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-  </table>
 </body>
+
 </html>
